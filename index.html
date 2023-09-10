@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+
+  <body>
+    <h1>Registration form</h1>
+    <div>
+      <form action="form.php">
+        <label for="firstname">Firstname:</label>
+        <input
+          type="text"
+          id="f1"
+          name="firstname"
+          placeholder="Enter your firstname"
+        />
+        <label for="lastname">Lastname:</label>
+        <input
+          type="text"
+          id="l1"
+          name="lastname"
+          placeholder="Enter your lastname"
+        /><br /><br /><br />
+
+        <label for="b1">Birthdate:</label>
+        <input
+          type="date"
+          id="b1"
+          name="birthdate"
+          value="1"
+        /><br /><br /><br />
+
+        <label>Course:</label>
+        <select name="course" id="course">
+          <option name="course" value="no course">Select</option>
+          <option name="course" value="BCA">BCA</option>
+          <option name="course" value="BSC">BSC</option>
+          <option name="course" value="PGDCA">PGDCA</option></select
+        ><br /><br /><br />
+
+        <label>Gender:</label>
+        <input type="radio" id="r1" name="radio" value="Male" />
+        <label for="r1">Male</label>
+        <input type="radio" id="r2" name="radio" value="Female" />
+        <label for="r2">Female</label>
+
+        <input type="radio" id="r3" name="radio" value="Other" />
+        <label for="r3">Other</label><br /><br /><br />
+
+        <label>Game:</label>
+        <input type="checkbox" id="s1" name="checkbox" value="Cricket" />
+        <label for="s1">Cricket</label>
+        <input type="checkbox" id="s2" name="checkbox" value="kabaddi" />
+        <label for="s2">Kabaddi</label>
+        <input type="checkbox" id="s3" name="checkbox" value="Volleyball" />
+        <label for="s3">Volleyball</label><br /><br />
+
+        <p>Select your photo</p>
+        <input type="file" />
+      </form>
+    </div>
+  </body>
+</html>
